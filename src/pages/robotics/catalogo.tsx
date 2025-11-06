@@ -337,22 +337,28 @@ const SundayAgTechSolutions = () => {
     { id: 'medium', name: 'Medio (3-6 meses)', color: 'yellow' },
     { id: 'long', name: 'Largo (6-18 meses)', color: 'red' }
   ];
-
-  const getTimelineCategory = (timeline) => {
+  
+  const getTimelineCategory = (timeline: string) => {
     if (timeline.includes('semanas') || timeline.includes('weeks')) return 'fast';
     if (timeline.includes('6-12') || timeline.includes('8-15')) return 'medium';
     return 'long';
   };
-
+  
   const filteredSolutions = solutionCatalog.filter(solution => {
-    const matchesCategory = selectedCategory === 'all' || solution.category === selectedCategory;
-    const matchesSearch = solution.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         solution.problem.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         solution.tagline.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesTimeline = selectedTimeline === 'all' || getTimelineCategory(solution.timeline) === selectedTimeline;
-    
+    const matchesCategory =
+      selectedCategory === 'all' || solution.category === selectedCategory;
+  
+    const matchesSearch =
+      solution.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      solution.problem.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      solution.tagline.toLowerCase().includes(searchTerm.toLowerCase());
+  
+    const matchesTimeline =
+      selectedTimeline === 'all' ||
+      getTimelineCategory(solution.timeline) === selectedTimeline;
+  
     return matchesCategory && matchesSearch && matchesTimeline;
-  });
+  });  
 
   return (
     <div className="min-h-screen bg-gray-50">
