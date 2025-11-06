@@ -1,5 +1,8 @@
 # 🖥️ Personal Portfolio
 
+# Lo corres con
+$ npm run dev
+
 A sleek, modern, and responsive portfolio bootstrapped with [create-t3-app](https://create.t3.gg/).
 
 [Website Preview](https://github.com/wendoj/portfolio/assets/77996774/b73b02d7-0657-41e3-9124-e6d04b17fe93)
