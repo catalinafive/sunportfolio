@@ -46,7 +46,7 @@ const navLinks = [
 function handleClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
   const href = e.currentTarget.getAttribute("href");
 
-  if (href && href.startsWith("#")) {
+  if (href?.startsWith("#")) {
     e.preventDefault();
     const section = document.querySelector(href);
     scrollTo(section);
