@@ -24,91 +24,91 @@ export default function FlowerSelection() {
   }, []);
 
   const metricsData = [
-    { label: "Velocidad de Procesamiento", value: "200+", unit: "tallos/min", change: "+300%", color: "text-blue-400" },
-    { label: "Precisión de Clasificación", value: "97.3%", unit: "exactitud", change: "+29.7%", color: "text-green-400" },
-    { label: "Reducción de Personal", value: "83%", unit: "mano de obra", change: "-5 operarios", color: "text-purple-400" },
-    { label: "Tiempo de ROI", value: "7.3", unit: "meses", change: "720% 5 años", color: "text-yellow-400" }
+    { label: "Processing Speed", value: "200+", unit: "stems/min", change: "+300%", color: "text-blue-400" },
+    { label: "Classification Accuracy", value: "97.3%", unit: "accuracy", change: "+29.7%", color: "text-green-400" },
+    { label: "Labor Reduction", value: "83%", unit: "workforce", change: "-5 operators", color: "text-purple-400" },
+    { label: "ROI Time", value: "7.3", unit: "months", change: "720% 5 years", color: "text-yellow-400" }
   ];
 
   const techSpecs = [
     {
-      category: "Sistema de Visión",
+      category: "Vision System",
       icon: Camera,
       specs: [
-        { label: "Cámaras", value: "4 × 2048×1536px", highlight: true },
-        { label: "Procesamiento IA", value: "NVIDIA Jetson Xavier NX" },
-        { label: "Dataset Entrenamiento", value: "50,000+ imágenes de flores" },
-        { label: "Velocidad Detección", value: "Análisis en tiempo real" }
+        { label: "Cameras", value: "4 × 2048×1536px", highlight: true },
+        { label: "AI Processing", value: "NVIDIA Jetson Xavier NX" },
+        { label: "Training Dataset", value: "50,000+ flower images" },
+        { label: "Detection Speed", value: "Real-time analysis" }
       ]
     },
     {
-      category: "Rendimiento",
+      category: "Performance",
       icon: Gauge,
       specs: [
-        { label: "Tasa de Procesamiento", value: "200+ tallos/minuto", highlight: true },
-        { label: "Capacidad Diaria", value: "28,800 tallos/8hrs" },
-        { label: "Estaciones de Clasificación", value: "12 unidades neumáticas" },
-        { label: "Tasa de Precisión", value: "97.3% ± 2%" }
+        { label: "Processing Rate", value: "200+ stems/minute", highlight: true },
+        { label: "Daily Capacity", value: "28,800 stems/8hrs" },
+        { label: "Classification Stations", value: "12 pneumatic units" },
+        { label: "Accuracy Rate", value: "97.3% ± 2%" }
       ]
     },
     {
-      category: "Configuración Sistema",
+      category: "System Configuration",
       icon: Settings,
       specs: [
-        { label: "Dimensiones", value: "3.2m × 1.8m × 2.1m" },
-        { label: "Peso", value: "1,250 kg operacional" },
-        { label: "Energía", value: "220V/380V, 15kW", highlight: true },
-        { label: "Presión Aire", value: "6 bar requeridos" }
+        { label: "Dimensions", value: "3.2m × 1.8m × 2.1m" },
+        { label: "Weight", value: "1,250 kg operational" },
+        { label: "Power", value: "220V/380V, 15kW", highlight: true },
+        { label: "Air Pressure", value: "6 bar required" }
       ]
     }
   ];
 
   const pricingTiers = [
     {
-      name: "Compra",
+      name: "Purchase",
       price: "$89,500",
-      period: "pago único",
-      description: "Propiedad completa con garantía total",
+      period: "one-time payment",
+      description: "Full ownership with total warranty",
       features: [
-        "Sistema completo con instalación",
-        "Garantía integral de 2 años", 
-        "Entrenamiento para 3 operarios",
-        "6 meses de soporte dedicado",
-        "Garantías de rendimiento"
+        "Complete system with installation",
+        "2-year comprehensive warranty", 
+        "Training for 3 operators",
+        "6 months of dedicated support",
+        "Performance guarantees"
       ],
-      cta: "Comprar Ahora",
+      cta: "Buy Now",
       popular: false,
       gradient: "from-blue-600/20 to-blue-800/20"
     },
     {
       name: "Leasing",
       price: "$2,850",
-      period: "/mes",
-      description: "Opción flexible de leasing a 36 meses",
+      period: "/month",
+      description: "Flexible leasing option for 36 months",
       features: [
-        "Instalación y configuración incluida",
-        "Paquete completo de mantenimiento",
-        "Ruta de actualización tecnológica",
-        "Monitoreo de rendimiento",
-        "Soporte técnico 24/7"
+        "Installation and configuration included",
+        "Complete maintenance package",
+        "Technology upgrade path",
+        "Performance monitoring",
+        "24/7 technical support"
       ],
-      cta: "Iniciar Leasing",
+      cta: "Start Leasing",
       popular: true,
       gradient: "from-primary/20 to-secondary/20"
     },
     {
-      name: "Programa Piloto",
+      name: "Pilot Program",
       price: "$8,500",
-      period: "/mes",
-      description: "Programa de validación de 3 meses",
+      period: "/month",
+      description: "3-month validation program",
       features: [
-        "Instalación completa del sistema",
-        "Pruebas de validación de rendimiento",
-        "Documentación de ROI",
-        "Crédito aplicado a compra",
-        "Evaluación libre de riesgo"
+        "Complete system installation",
+        "Performance validation testing",
+        "ROI documentation",
+        "Credit applied to purchase",
+        "Risk-free evaluation"
       ],
-      cta: "Iniciar Piloto",
+      cta: "Start Pilot",
       popular: false,
       gradient: "from-green-600/20 to-green-800/20"
     }
@@ -117,16 +117,16 @@ export default function FlowerSelection() {
   return (
     <>
       <Head>
-        <title>Sistema de Selección Automatizada de Flores - IA Agrícola Avanzada</title>
-        <meta name="description" content="Sistema revolucionario de selección de flores potenciado por IA con 97.3% de precisión, procesamiento de 200+ tallos/minuto, y ROI de 7.3 meses" />
+        <title>Automated Flower Selection System - Advanced Agricultural AI</title>
+        <meta name="description" content="Revolutionary AI-powered flower selection system with 97.3% accuracy, processing 200+ stems/minute, and 7.3 month ROI" />
       </Head>
 
       <Container>
         <div ref={refScrollContainer}>
           
-          {/* Sección Hero - Pantalla Tecnológica Inmersiva */}
+          {/* Hero Section - Immersive Technology Screen */}
           <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-            {/* Fondo de Cuadrícula Animada */}
+            {/* Animated Grid Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background/90">
               <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.03)_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
             </div>
@@ -134,70 +134,70 @@ export default function FlowerSelection() {
             <div className="relative z-10 max-w-7xl mx-auto px-4 py-20">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 
-                {/* Contenido Izquierdo */}
+                {/* Left Content */}
                 <div className="space-y-8">
-                  {/* Píldoras Tecnológicas */}
+                  {/* Technology Pills */}
                   <div className="flex flex-wrap gap-3">
-                    {["Visión IA", "Deep Learning", "IoT Industrial"].map((tech, i) => (
+                    {["AI Vision", "Deep Learning", "Industrial IoT"].map((tech, i) => (
                       <div key={tech} className={`pill ${i === 1 ? 'bg-primary/20 text-primary border-primary/30' : ''}`}>
                         {tech}
                       </div>
                     ))}
                   </div>
 
-                  {/* Título Principal */}
+                  {/* Main Title */}
                   <div className="space-y-4">
                     <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                      <span className="text-foreground">Sistema de</span><br/>
-                      <span className="text-gradient clash-grotesk">Selección</span><br/>
-                      <span className="text-foreground">Automatizada</span><br/>
-                      <span className="text-gradient clash-grotesk">de Flores</span>
+                      <span className="text-foreground">Automated</span><br/>
+                      <span className="text-gradient clash-grotesk">Flower</span><br/>
+                      <span className="text-foreground">Selection</span><br/>
+                      <span className="text-gradient clash-grotesk">System</span>
                     </h1>
                     <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
-                      Sistema revolucionario de visión potenciado por IA que procesa <span className="text-primary font-semibold">200+ tallos por minuto</span> con <span className="text-green-400 font-semibold">97.3% de precisión</span>. CNN de aprendizaje profundo entrenada con 50,000+ imágenes de flores.
+                      Revolutionary AI-powered vision system that processes <span className="text-primary font-semibold">200+ stems per minute</span> with <span className="text-green-400 font-semibold">97.3% accuracy</span>. Deep learning CNN trained with 50,000+ flower images.
                     </p>
                   </div>
 
-                  {/* Botones de Acción */}
+                  {/* Action Buttons */}
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button size="lg" className="group bg-primary hover:bg-primary/90">
-                      Solicitar Programa Piloto
+                      Request Pilot Program
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
                     <Button size="lg" variant="outline" className="group">
                       <Play className="mr-2 h-4 w-4" />
-                      Ver Video Demo
+                      Watch Demo Video
                     </Button>
                   </div>
 
-                  {/* Métricas en Vivo */}
+                  {/* Live Metrics */}
                   
                 </div>
 
-                {/* Contenido Derecho - Vista Previa 3D Interactiva */}
+                {/* Right Content - Interactive 3D Preview */}
                 <div className="relative">
                   <div className="relative aspect-square bg-gradient-to-br from-primary/10 to-secondary/5 rounded-3xl border border-white/10 overflow-hidden">
-                    {/* Placeholder de Video/Vista 3D */}
+                    {/* Video/3D View Placeholder */}
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center space-y-4">
                         <div className="w-32 h-32 mx-auto bg-primary/20 rounded-full flex items-center justify-center">
                           <Play className="h-12 w-12 text-primary" />
                         </div>
-                        <p className="text-muted-foreground">Vista Previa 3D Interactiva del Sistema</p>
+                        <p className="text-muted-foreground">Interactive 3D System Preview</p>
                         <Button variant="outline" size="sm">
-                          Lanzar Vista 3D
+                          Launch 3D View
                         </Button>
                       </div>
                     </div>
                     
-                    {/* Métricas Flotantes */}
+                    {/* Floating Metrics */}
                     <div className="absolute top-4 right-4 p-3 bg-background/80 backdrop-blur rounded-lg border border-white/20">
-                      <div className="text-xs text-muted-foreground">Tiempo real</div>
+                      <div className="text-xs text-muted-foreground">Real time</div>
                       <div className="text-lg font-bold text-green-400">97.3%</div>
                     </div>
                     
                     <div className="absolute bottom-4 left-4 p-3 bg-background/80 backdrop-blur rounded-lg border border-white/20">
-                      <div className="text-xs text-muted-foreground">Procesando</div>
+                      <div className="text-xs text-muted-foreground">Processing</div>
                       <div className="text-lg font-bold text-blue-400">247/min</div>
                     </div>
                   </div>
@@ -206,15 +206,15 @@ export default function FlowerSelection() {
             </div>
           </section>
 
-          {/* Panel de Métricas Interactivo */}
+          {/* Interactive Metrics Panel */}
           <section className="py-20 relative">
             <div className="max-w-7xl mx-auto px-4">
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold mb-4">
-                  Métricas de <span className="text-gradient">Rendimiento</span>
+                  Performance <span className="text-gradient">Metrics</span>
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Datos de rendimiento del mundo real de 18+ meses de operaciones comerciales
+                  Real-world performance data from 18+ months of commercial operations
                 </p>
               </div>
 
@@ -249,32 +249,32 @@ export default function FlowerSelection() {
                 ))}
               </div>
 
-              {/* Vista Detallada de Métrica */}
+              {/* Metric Detail View */}
               <div className="p-8 rounded-2xl bg-gradient-to-r from-primary/5 to-secondary/5 border border-white/10">
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                   <div>
                     <h3 className="text-2xl font-bold mb-4">
-                      Análisis de {metricsData[selectedMetric].label}
+                      Analysis of {metricsData[selectedMetric].label}
                     </h3>
                     <div className="space-y-4">
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                        <span>Procesamiento Manual: 50 tallos/minuto promedio</span>
+                        <span>Manual Processing: 50 stems/minute average</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                        <span>Sistema Automatizado: 200+ tallos/minuto consistente</span>
+                        <span>Automated System: 200+ stems/minute consistent</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                        <span>Mejora: 4x aumento de velocidad con mayor precisión</span>
+                        <span>Improvement: 4x speed increase with higher accuracy</span>
                       </div>
                     </div>
                   </div>
                   <div className="h-64 bg-white/[0.02] rounded-lg flex items-center justify-center border border-white/10">
                     <div className="text-center">
                       <BarChart3 className="h-12 w-12 text-primary mx-auto mb-4" />
-                      <p className="text-muted-foreground">Visualización de Gráfico Interactivo</p>
+                      <p className="text-muted-foreground">Interactive Chart Visualization</p>
                     </div>
                   </div>
                 </div>
@@ -282,16 +282,16 @@ export default function FlowerSelection() {
             </div>
           </section>
 
-          {/* Especificaciones Técnicas - Diseño Avanzado */}
+          {/* Technical Specifications - Advanced Design */}
           <section className="py-20 bg-gradient-to-b from-background to-background/50">
             <div className="max-w-7xl mx-auto px-4">
               <div className="text-center mb-16">
-                <span className="text-sm font-semibold text-primary uppercase tracking-wide">Excelencia Técnica</span>
+                <span className="text-sm font-semibold text-primary uppercase tracking-wide">Technical Excellence</span>
                 <h2 className="text-4xl font-bold mt-4 mb-6">
-                  Arquitectura de <span className="text-gradient">Grado Empresarial</span>
+                  Enterprise Grade <span className="text-gradient">Architecture</span>
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Confiabilidad industrial combinada con tecnología de IA de vanguardia
+                  Industrial reliability combined with cutting-edge AI technology
                 </p>
               </div>
 
@@ -321,11 +321,11 @@ export default function FlowerSelection() {
                 ))}
               </div>
 
-              {/* Diagrama de Integración */}
+              {/* System Integration Diagram */}
               <div className="mt-16 p-8 rounded-2xl bg-gradient-to-r from-primary/5 to-secondary/5 border border-white/10">
-                <h3 className="text-2xl font-bold text-center mb-8">Flujo de Integración del Sistema</h3>
+                <h3 className="text-2xl font-bold text-center mb-8">System Integration Flow</h3>
                 <div className="flex flex-wrap justify-center items-center gap-8">
-                  {["Entrada Cruda", "Visión IA", "Clasificación", "Clasificación", "Salida de Calidad"].map((step, index) => (
+                  {["Raw Input", "AI Vision", "Classification", "Sorting", "Quality Output"].map((step, index) => (
                     <div key={index} className="flex items-center">
                       <div className="p-4 rounded-lg bg-background border border-white/20 text-center min-w-[120px]">
                         <div className="text-sm font-medium">{step}</div>
@@ -338,16 +338,16 @@ export default function FlowerSelection() {
             </div>
           </section>
 
-          {/* Precios - Diseño Premium */}
+          {/* Pricing - Premium Design */}
           <section className="py-20">
             <div className="max-w-7xl mx-auto px-4">
               <div className="text-center mb-16">
-                <span className="text-sm font-semibold text-primary uppercase tracking-wide">Opciones de Inversión</span>
+                <span className="text-sm font-semibold text-primary uppercase tracking-wide">Investment Options</span>
                 <h2 className="text-4xl font-bold mt-4 mb-6">
-                  <span className="text-gradient">Financiamiento</span> Flexible
+                  Flexible <span className="text-gradient">Financing</span>
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Elige el modelo de inversión que se alinee con tu estrategia de negocio
+                  Choose the investment model that aligns with your business strategy
                 </p>
               </div>
 
@@ -356,7 +356,7 @@ export default function FlowerSelection() {
                   <div key={index} className={`relative group ${tier.popular ? 'scale-105' : ''}`}>
                     {tier.popular && (
                       <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
-                        Más Popular
+                        Most Popular
                       </div>
                     )}
                     
@@ -396,51 +396,51 @@ export default function FlowerSelection() {
                 ))}
               </div>
 
-              {/* Calculadora de ROI */}
+              {/* ROI Calculator */}
               <div className="mt-16 p-8 rounded-2xl bg-gradient-to-r from-green-600/10 to-green-800/10 border border-green-400/20">
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold mb-4">Calculadora de ROI</h3>
-                  <p className="text-muted-foreground">Calcula tu retorno de inversión</p>
+                  <h3 className="text-2xl font-bold mb-4">ROI Calculator</h3>
+                  <p className="text-muted-foreground">Calculate your return on investment</p>
                 </div>
                 
                 <div className="grid md:grid-cols-3 gap-8 items-center">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-green-400">$146,700</div>
-                    <div className="text-sm text-muted-foreground">Beneficio Anual</div>
+                    <div className="text-sm text-muted-foreground">Annual Profit</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary">7.3</div>
-                    <div className="text-sm text-muted-foreground">Meses de Recuperación</div>
+                    <div className="text-sm text-muted-foreground">Months Payback</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-yellow-400">720%</div>
-                    <div className="text-sm text-muted-foreground">ROI a 5 Años</div>
+                    <div className="text-sm text-muted-foreground">5-Year ROI</div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Casos de Estudio y Resultados */}
+          {/* Case Studies and Results */}
           <section className="py-20 bg-gradient-to-b from-background/50 to-background">
             <div className="max-w-7xl mx-auto px-4">
               <div className="text-center mb-16">
-                <span className="text-sm font-semibold text-primary uppercase tracking-wide">Éxito Comprobado</span>
+                <span className="text-sm font-semibold text-primary uppercase tracking-wide">Proven Success</span>
                 <h2 className="text-4xl font-bold mt-4 mb-6">
-                  <span className="text-gradient">Impacto</span> Real
+                  Real <span className="text-gradient">Impact</span>
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Resultados documentados de operaciones comerciales en toda Colombia
+                  Documented results from commercial operations across Colombia
                 </p>
               </div>
 
-              {/* Cuadrícula de Métricas de Rendimiento */}
+              {/* Performance Metrics Grid */}
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
                 {[
-                  { value: "29.7%", label: "Mejora en Precisión", detail: "75% → 97.3%" },
-                  { value: "4x", label: "Aumento de Velocidad", detail: "50 → 200 tallos/min" },
-                  { value: "83%", label: "Reducción de Personal", detail: "6 → 1 operario" },
-                  { value: "$245K", label: "Ahorro Anual", detail: "Caso Tecondor" }
+                  { value: "29.7%", label: "Accuracy Improvement", detail: "75% → 97.3%" },
+                  { value: "4x", label: "Speed Increase", detail: "50 → 200 stems/min" },
+                  { value: "83%", label: "Labor Reduction", detail: "6 → 1 operator" },
+                  { value: "$245K", label: "Annual Savings", detail: "Tecondor Case" }
                 ].map((metric, index) => (
                   <div key={index} className="text-center p-6 bg-white/[0.02] rounded-xl border border-white/10">
                     <div className="text-3xl font-bold text-gradient mb-2">{metric.value}</div>
@@ -450,41 +450,38 @@ export default function FlowerSelection() {
                 ))}
               </div>
 
-              {/* Caso de Estudio Destacado */}
+              {/* Featured Case Study */}
               <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-white/10">
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
                   <div>
                     <div className="flex items-center gap-3 mb-6">
                       <Award className="h-6 w-6 text-yellow-400" />
-                      <span className="text-sm font-semibold text-yellow-400 uppercase tracking-wide">Caso de Estudio Destacado</span>
+                      <span className="text-sm font-semibold text-yellow-400 uppercase tracking-wide">Featured Case Study</span>
                     </div>
                     
                     <h3 className="text-2xl font-bold mb-4">Tecondor Colombia</h3>
                     <p className="text-muted-foreground mb-6">
-                      Exportador premium de rosas que procesa 25M de tallos anualmente logró resultados 
-                      extraordinarios con nuestro sistema de selección automatizada.
+                      Premium rose exporter processing 25M stems annually achieved extraordinary results with our automated selection system.
                     </p>
 
                     <blockquote className="text-lg italic mb-6 border-l-4 border-primary pl-4">
-                      "El sistema de selección automatizada transformó nuestro control de calidad. Ahora 
-                      cumplimos consistentemente con los estándares de exportación premium mientras reducimos 
-                      nuestra dependencia laboral en un 80%."
+                      "The automated selection system transformed our quality control. We now consistently meet premium export standards while reducing our labor dependency by 80%."
                     </blockquote>
 
                     <div className="flex items-center gap-4 text-sm text-muted-foreground">
                       <div>
                         <div className="font-semibold text-foreground">Juan Carlos Méndez</div>
-                        <div>Gerente de Producción</div>
+                        <div>Production Manager</div>
                       </div>
                     </div>
                   </div>
 
                   <div className="space-y-4">
                     {[
-                      { label: "Grado de Calidad A", before: "78%", after: "96%", improvement: "+18%" },
-                      { label: "Velocidad de Procesamiento", before: "50/min", after: "200/min", improvement: "4x" },
-                      { label: "Rechazo en Exportación", before: "8%", after: "1.2%", improvement: "-6.8%" },
-                      { label: "Ahorro Anual", before: "$0", after: "$245K", improvement: "Nuevo" }
+                      { label: "Grade A Quality", before: "78%", after: "96%", improvement: "+18%" },
+                      { label: "Processing Speed", before: "50/min", after: "200/min", improvement: "4x" },
+                      { label: "Export Rejection", before: "8%", after: "1.2%", improvement: "-6.8%" },
+                      { label: "Annual Savings", before: "$0", after: "$245K", improvement: "New" }
                     ].map((metric, index) => (
                       <div key={index} className="flex items-center justify-between p-4 bg-background/50 rounded-lg">
                         <span className="text-sm font-medium">{metric.label}</span>
@@ -502,86 +499,86 @@ export default function FlowerSelection() {
             </div>
           </section>
 
-          {/* Solicitud de Programa Piloto - Formulario Interactivo */}
+          {/* Pilot Program Request - Interactive Form */}
           <section className="py-20">
             <div className="max-w-4xl mx-auto px-4">
               <div className="text-center mb-16">
-                <span className="text-sm font-semibold text-primary uppercase tracking-wide">Comenzar</span>
+                <span className="text-sm font-semibold text-primary uppercase tracking-wide">Get Started</span>
                 <h2 className="text-4xl font-bold mt-4 mb-6">
-                  Solicitar <span className="text-gradient">Programa Piloto</span>
+                  Request <span className="text-gradient">Pilot Program</span>
                 </h2>
                 <p className="text-xl text-muted-foreground">
-                  Experimenta el rendimiento del sistema en tu instalación con nuestro programa piloto de 3 meses
+                  Experience system performance in your facility with our 3-month pilot program
                 </p>
               </div>
 
               <div className="grid lg:grid-cols-2 gap-12">
-                {/* Formulario */}
+                {/* Form */}
                 <div className="p-8 rounded-2xl bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/10">
-                  <h3 className="text-xl font-bold mb-6">Aplicación para Programa Piloto</h3>
+                  <h3 className="text-xl font-bold mb-6">Pilot Program Application</h3>
                   
                   <form className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-medium mb-2">Nombre de la Empresa</label>
+                        <label className="block text-sm font-medium mb-2">Company Name</label>
                         <input type="text" className="w-full p-3 rounded-lg bg-background border border-white/20 focus:border-primary focus:outline-none transition-colors" />
                       </div>
                       <div>
-                        <label className="block text-sm font-medium mb-2">Persona de Contacto</label>
+                        <label className="block text-sm font-medium mb-2">Contact Person</label>
                         <input type="text" className="w-full p-3 rounded-lg bg-background border border-white/20 focus:border-primary focus:outline-none transition-colors" />
                       </div>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-medium mb-2">Correo Electrónico</label>
+                        <label className="block text-sm font-medium mb-2">Email</label>
                         <input type="email" className="w-full p-3 rounded-lg bg-background border border-white/20 focus:border-primary focus:outline-none transition-colors" />
                       </div>
                       <div>
-                        <label className="block text-sm font-medium mb-2">Teléfono</label>
+                        <label className="block text-sm font-medium mb-2">Phone</label>
                         <input type="tel" className="w-full p-3 rounded-lg bg-background border border-white/20 focus:border-primary focus:outline-none transition-colors" />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium mb-2">Volumen Anual de Flores</label>
+                      <label className="block text-sm font-medium mb-2">Annual Flower Volume</label>
                       <select className="w-full p-3 rounded-lg bg-background border border-white/20 focus:border-primary focus:outline-none transition-colors">
-                        <option>Seleccionar rango de volumen</option>
-                        <option>Menos de 1M tallos</option>
-                        <option>1M - 5M tallos</option>
-                        <option>5M - 20M tallos</option>
-                        <option>Más de 20M tallos</option>
+                        <option>Select volume range</option>
+                        <option>Less than 1M stems</option>
+                        <option>1M - 5M stems</option>
+                        <option>5M - 20M stems</option>
+                        <option>More than 20M stems</option>
                       </select>
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium mb-2">Desafíos Actuales</label>
-                      <textarea rows={4} className="w-full p-3 rounded-lg bg-background border border-white/20 focus:border-primary focus:outline-none transition-colors" placeholder="Describe tus desafíos actuales de control de calidad..."></textarea>
+                      <label className="block text-sm font-medium mb-2">Current Challenges</label>
+                      <textarea rows={4} className="w-full p-3 rounded-lg bg-background border border-white/20 focus:border-primary focus:outline-none transition-colors" placeholder="Describe your current quality control challenges..."></textarea>
                     </div>
 
                     <Button className="w-full bg-primary hover:bg-primary/90">
-                      Enviar Solicitud de Piloto
+                      Submit Pilot Request
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </form>
                 </div>
 
-                {/* Beneficios del Programa Piloto */}
+                {/* Pilot Program Benefits */}
                 <div className="space-y-6">
                   <div className="p-6 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
                     <h4 className="font-bold mb-4 flex items-center gap-2">
                       <Zap className="h-5 w-5 text-primary" />
-                      Qué Incluye el Piloto
+                      What the Pilot Includes
                     </h4>
                     <ul className="space-y-3">
                       {[
-                        "Instalación completa del sistema en tu instalación",
-                        "Período de validación de rendimiento de 3 meses",
-                        "Documentación integral de ROI",
-                        "Entrenamiento para tus operarios",
-                        "Soporte técnico 24/7",
-                        "Reportes de evaluación de rendimiento",
-                        "Crédito de compra si decides adquirir"
+                        "Complete system installation at your facility",
+                        "3-month performance validation period",
+                        "Comprehensive ROI documentation",
+                        "Training for your operators",
+                        "24/7 technical support",
+                        "Performance evaluation reports",
+                        "Purchase credit if you decide to acquire"
                       ].map((benefit, index) => (
                         <li key={index} className="flex items-start gap-3">
                           <CheckCircle className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
@@ -594,23 +591,23 @@ export default function FlowerSelection() {
                   <div className="p-6 rounded-xl bg-gradient-to-br from-green-600/10 to-green-800/10 border border-green-400/20">
                     <h4 className="font-bold mb-4 flex items-center gap-2">
                       <Award className="h-5 w-5 text-green-400" />
-                      Garantía Libre de Riesgo
+                      Risk-Free Guarantee
                     </h4>
                     <p className="text-sm text-muted-foreground mb-4">
-                      Si el sistema no cumple con los objetivos de rendimiento durante el piloto, lo retiraremos sin costo alguno para ti.
+                      If the system doesn't meet performance objectives during the pilot, we'll remove it at no cost to you.
                     </p>
                     <div className="space-y-2">
                       <div className="flex justify-between text-sm">
-                        <span>Objetivo de Precisión:</span>
+                        <span>Accuracy Target:</span>
                         <span className="font-bold text-green-400">≥95%</span>
                       </div>
                       <div className="flex justify-between text-sm">
-                        <span>Objetivo de Velocidad:</span>
-                        <span className="font-bold text-green-400">≥180 tallos/min</span>
+                        <span>Speed Target:</span>
+                        <span className="font-bold text-green-400">≥180 stems/min</span>
                       </div>
                       <div className="flex justify-between text-sm">
-                        <span>Cronograma de ROI:</span>
-                        <span className="font-bold text-green-400">≤12 meses</span>
+                        <span>ROI Timeline:</span>
+                        <span className="font-bold text-green-400">≤12 months</span>
                       </div>
                     </div>
                   </div>
@@ -618,14 +615,14 @@ export default function FlowerSelection() {
                   <div className="p-6 rounded-xl bg-gradient-to-br from-blue-600/10 to-blue-800/10 border border-blue-400/20">
                     <h4 className="font-bold mb-4 flex items-center gap-2">
                       <Calendar className="h-5 w-5 text-blue-400" />
-                      Cronograma de Implementación
+                      Implementation Timeline
                     </h4>
                     <div className="space-y-3">
                       {[
-                        { week: "Semana 1", task: "Preparación del sitio e instalación" },
-                        { week: "Semana 2", task: "Calibración del sistema y pruebas" },
-                        { week: "Semana 3-4", task: "Entrenamiento de operarios y validación" },
-                        { week: "Mes 2-3", task: "Monitoreo de rendimiento y optimización" }
+                        { week: "Week 1", task: "Site preparation and installation" },
+                        { week: "Week 2", task: "System calibration and testing" },
+                        { week: "Week 3-4", task: "Operator training and validation" },
+                        { week: "Month 2-3", task: "Performance monitoring and optimization" }
                       ].map((phase, index) => (
                         <div key={index} className="flex items-center gap-3">
                           <div className="w-8 h-8 rounded-full bg-blue-400/20 flex items-center justify-center text-xs font-bold">
@@ -644,57 +641,57 @@ export default function FlowerSelection() {
             </div>
           </section>
 
-          {/* Galería de Videos y Recursos */}
+          {/* Video Gallery and Resources */}
           <section className="py-20 bg-gradient-to-b from-background to-background/50">
             <div className="max-w-7xl mx-auto px-4">
               <div className="text-center mb-16">
-                <span className="text-sm font-semibold text-primary uppercase tracking-wide">Medios y Recursos</span>
+                <span className="text-sm font-semibold text-primary uppercase tracking-wide">Media & Resources</span>
                 <h2 className="text-4xl font-bold mt-4 mb-6">
-                  Míralo en <span className="text-gradient">Acción</span>
+                  See It in <span className="text-gradient">Action</span>
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Observa demostraciones en vivo y descarga documentación técnica
+                  Watch live demonstrations and download technical documentation
                 </p>
               </div>
 
-              {/* Cuadrícula de Videos */}
+              {/* Video Grid */}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 {[
                   {
-                    title: "Demo General del Sistema",
+                    title: "System Overview Demo",
                     duration: "3:45",
-                    thumbnail: "resumen-sistema",
-                    description: "Recorrido completo del proceso de selección automatizada"
+                    thumbnail: "system-overview",
+                    description: "Complete tour of the automated selection process"
                   },
                   {
-                    title: "Proceso de Instalación",
+                    title: "Installation Process",
                     duration: "2:20",
-                    thumbnail: "instalacion",
-                    description: "Procedimiento paso a paso de instalación y configuración"
+                    thumbnail: "installation",
+                    description: "Step-by-step installation and configuration procedure"
                   },
                   {
-                    title: "Prueba de Rendimiento en Vivo",
+                    title: "Live Performance Test",
                     duration: "5:12",
-                    thumbnail: "rendimiento",
-                    description: "Procesamiento en tiempo real en las instalaciones de Tecondor"
+                    thumbnail: "performance",
+                    description: "Real-time processing at Tecondor facilities"
                   },
                   {
-                    title: "Entrenamiento de Operarios",
+                    title: "Operator Training",
                     duration: "8:30",
-                    thumbnail: "entrenamiento",
-                    description: "Descripción general del programa de entrenamiento integral"
+                    thumbnail: "training",
+                    description: "Overview of comprehensive training program"
                   },
                   {
-                    title: "Guía de Mantenimiento",
+                    title: "Maintenance Guide",
                     duration: "4:15",
-                    thumbnail: "mantenimiento",
-                    description: "Procedimientos de mantenimiento diario y semanal"
+                    thumbnail: "maintenance",
+                    description: "Daily and weekly maintenance procedures"
                   },
                   {
-                    title: "Análisis de ROI",
+                    title: "ROI Analysis",
                     duration: "6:45",
                     thumbnail: "roi",
-                    description: "Análisis detallado de costo-beneficio y casos de estudio"
+                    description: "Detailed cost-benefit analysis and case studies"
                   }
                 ].map((video, index) => (
                   <div key={index} className="group cursor-pointer">
@@ -716,36 +713,36 @@ export default function FlowerSelection() {
                 ))}
               </div>
 
-              {/* Recursos de Descarga */}
+              {/* Download Resources */}
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
                   {
-                    title: "Especificaciones Técnicas",
+                    title: "Technical Specifications",
                     format: "PDF",
                     size: "2.4 MB",
                     icon: Monitor,
-                    description: "Documentación técnica completa"
+                    description: "Complete technical documentation"
                   },
                   {
-                    title: "Guía de Instalación",
+                    title: "Installation Guide",
                     format: "PDF",
                     size: "1.8 MB",
                     icon: Settings,
-                    description: "Instrucciones de configuración paso a paso"
+                    description: "Step-by-step configuration instructions"
                   },
                   {
-                    title: "Calculadora de ROI",
+                    title: "ROI Calculator",
                     format: "XLSX",
                     size: "450 KB",
                     icon: BarChart3,
-                    description: "Herramienta de análisis de ROI personalizable"
+                    description: "Customizable ROI analysis tool"
                   },
                   {
-                    title: "Casos de Estudio",
+                    title: "Case Studies",
                     format: "PDF",
                     size: "3.2 MB",
                     icon: Award,
-                    description: "Historias detalladas de éxito de clientes"
+                    description: "Detailed customer success stories"
                   }
                 ].map((resource, index) => (
                   <div key={index} className="p-6 rounded-xl bg-white/[0.02] border border-white/10 hover:bg-white/[0.05] hover:border-primary/20 transition-all duration-300 group cursor-pointer">
@@ -770,21 +767,21 @@ export default function FlowerSelection() {
             </div>
           </section>
 
-          {/* Contacto y Soporte */}
+          {/* Contact and Support */}
           <section className="py-20">
             <div className="max-w-7xl mx-auto px-4">
               <div className="text-center mb-16">
-                <span className="text-sm font-semibold text-primary uppercase tracking-wide">Soporte Experto</span>
+                <span className="text-sm font-semibold text-primary uppercase tracking-wide">Expert Support</span>
                 <h2 className="text-4xl font-bold mt-4 mb-6">
-                  ¿Listo para <span className="text-gradient">Transformar</span> tu Operación?
+                  Ready to <span className="text-gradient">Transform</span> Your Operation?
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Nuestros expertos técnicos están listos para discutir tus requerimientos específicos y diseñar una solución personalizada
+                  Our technical experts are ready to discuss your specific requirements and design a customized solution
                 </p>
               </div>
 
               <div className="grid lg:grid-cols-3 gap-8">
-                {/* Opciones de Contacto */}
+                {/* Contact Options */}
                 <div className="lg:col-span-2 grid md:grid-cols-2 gap-6">
                   <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20">
                     <div className="flex items-center gap-4 mb-6">
@@ -792,16 +789,16 @@ export default function FlowerSelection() {
                         <Phone className="h-6 w-6 text-primary" />
                       </div>
                       <div>
-                        <h3 className="font-bold">Programar una Llamada</h3>
-                        <p className="text-sm text-muted-foreground">Habla con nuestros expertos técnicos</p>
+                        <h3 className="font-bold">Schedule a Call</h3>
+                        <p className="text-sm text-muted-foreground">Speak with our technical experts</p>
                       </div>
                     </div>
                     <p className="text-sm text-muted-foreground mb-6">
-                      Obtén consultoría personalizada sobre requerimientos del sistema, proyecciones de ROI y planificación de implementación.
+                      Get personalized consultation on system requirements, ROI projections, and implementation planning.
                     </p>
                     <Button className="w-full bg-primary hover:bg-primary/90">
                       <Calendar className="mr-2 h-4 w-4" />
-                      Programar Consulta
+                      Schedule Consultation
                     </Button>
                   </div>
 
@@ -811,16 +808,16 @@ export default function FlowerSelection() {
                         <Mail className="h-6 w-6 text-green-400" />
                       </div>
                       <div>
-                        <h3 className="font-bold">Consulta Técnica</h3>
-                        <p className="text-sm text-muted-foreground">Obtén especificaciones detalladas</p>
+                        <h3 className="font-bold">Technical Inquiry</h3>
+                        <p className="text-sm text-muted-foreground">Get detailed specifications</p>
                       </div>
                     </div>
                     <p className="text-sm text-muted-foreground mb-6">
-                      Envía preguntas técnicas específicas y recibe documentación de ingeniería detallada.
+                      Send specific technical questions and receive detailed engineering documentation.
                     </p>
                     <Button variant="outline" className="w-full border-green-400/30 hover:bg-green-400/10">
                       <Mail className="mr-2 h-4 w-4" />
-                      Enviar Consulta Técnica
+                      Send Technical Inquiry
                     </Button>
                   </div>
 
@@ -830,16 +827,16 @@ export default function FlowerSelection() {
                         <Eye className="h-6 w-6 text-blue-400" />
                       </div>
                       <div>
-                        <h3 className="font-bold">Demo en Vivo</h3>
-                        <p className="text-sm text-muted-foreground">Ve el sistema en acción</p>
+                        <h3 className="font-bold">Live Demo</h3>
+                        <p className="text-sm text-muted-foreground">See the system in action</p>
                       </div>
                     </div>
                     <p className="text-sm text-muted-foreground mb-6">
-                      Demostración virtual o presencial del sistema completo de selección de flores.
+                      Virtual or in-person demonstration of the complete flower selection system.
                     </p>
                     <Button variant="outline" className="w-full border-blue-400/30 hover:bg-blue-400/10">
                       <Play className="mr-2 h-4 w-4" />
-                      Solicitar Demo
+                      Request Demo
                     </Button>
                   </div>
 
@@ -849,65 +846,65 @@ export default function FlowerSelection() {
                         <Users className="h-6 w-6 text-purple-400" />
                       </div>
                       <div>
-                        <h3 className="font-bold">Programa de Socios</h3>
-                        <p className="text-sm text-muted-foreground">Descuentos por volumen disponibles</p>
+                        <h3 className="font-bold">Partner Program</h3>
+                        <p className="text-sm text-muted-foreground">Volume discounts available</p>
                       </div>
                     </div>
                     <p className="text-sm text-muted-foreground mb-6">
-                      Explora oportunidades de asociación para múltiples implementaciones de sistemas.
+                      Explore partnership opportunities for multiple system implementations.
                     </p>
                     <Button variant="outline" className="w-full border-purple-400/30 hover:bg-purple-400/10">
                       <Users className="mr-2 h-4 w-4" />
-                      Ser Nuestro Socio
+                      Become Our Partner
                     </Button>
                   </div>
                 </div>
 
-                {/* Estadísticas Rápidas */}
+                {/* Quick Statistics */}
                 <div className="space-y-6">
                   <div className="p-6 rounded-xl bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/10">
-                    <h4 className="font-bold mb-4">Tiempos de Respuesta</h4>
+                    <h4 className="font-bold mb-4">Response Times</h4>
                     <div className="space-y-3">
                       <div className="flex justify-between">
-                        <span className="text-sm text-muted-foreground">Respuesta Inicial</span>
-                        <span className="text-sm font-medium">&lt; 2 horas</span>
+                        <span className="text-sm text-muted-foreground">Initial Response</span>
+                        <span className="text-sm font-medium">&lt; 2 hours</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-sm text-muted-foreground">Revisión Técnica</span>
-                        <span className="text-sm font-medium">&lt; 24 horas</span>
+                        <span className="text-sm text-muted-foreground">Technical Review</span>
+                        <span className="text-sm font-medium">&lt; 24 hours</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-sm text-muted-foreground">Entrega de Propuesta</span>
-                        <span className="text-sm font-medium">&lt; 48 horas</span>
+                        <span className="text-sm text-muted-foreground">Proposal Delivery</span>
+                        <span className="text-sm font-medium">&lt; 48 hours</span>
                       </div>
                     </div>
                   </div>
 
                   <div className="p-6 rounded-xl bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/10">
-                    <h4 className="font-bold mb-4">Métricas de Éxito</h4>
+                    <h4 className="font-bold mb-4">Success Metrics</h4>
                     <div className="space-y-3">
                       <div className="flex justify-between">
-                        <span className="text-sm text-muted-foreground">Satisfacción del Cliente</span>
+                        <span className="text-sm text-muted-foreground">Customer Satisfaction</span>
                         <span className="text-sm font-medium text-green-400">98.5%</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-sm text-muted-foreground">Tiempo de Actividad del Sistema</span>
+                        <span className="text-sm text-muted-foreground">System Uptime</span>
                         <span className="text-sm font-medium text-green-400">99.7%</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-sm text-muted-foreground">Logro de ROI</span>
+                        <span className="text-sm text-muted-foreground">ROI Achievement</span>
                         <span className="text-sm font-medium text-green-400">100%</span>
                       </div>
                     </div>
                   </div>
 
                   <div className="p-6 rounded-xl bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20">
-                    <h4 className="font-bold mb-2">Soporte Prioritario Empresarial</h4>
+                    <h4 className="font-bold mb-2">Enterprise Priority Support</h4>
                     <p className="text-sm text-muted-foreground mb-4">
-                      Soporte técnico 24/7 con ingenieros dedicados para clientes empresariales.
+                      24/7 technical support with dedicated engineers for enterprise customers.
                     </p>
                     <Button size="sm" className="w-full">
-                      Conoce Más
+                      Learn More
                     </Button>
                   </div>
                 </div>
@@ -915,29 +912,29 @@ export default function FlowerSelection() {
             </div>
           </section>
 
-          {/* CTA Final */}
+          {/* Final CTA */}
           <section className="py-20 bg-gradient-to-r from-primary/10 via-secondary/5 to-primary/10">
             <div className="max-w-4xl mx-auto px-4 text-center">
               <h2 className="text-4xl lg:text-6xl font-bold mb-6">
-                Transforma tu <span className="text-gradient">Selección de Flores</span> Hoy
+                Transform Your <span className="text-gradient">Flower Selection</span> Today
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Únete a los líderes de la industria que ya han revolucionado sus operaciones con automatización potenciada por IA
+                Join industry leaders who have already revolutionized their operations with AI-powered automation
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-4">
-                  Iniciar Programa Piloto
+                  Start Pilot Program
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8 py-4">
                   <Download className="mr-2 h-5 w-5" />
-                  Descargar Especificaciones
+                  Download Specifications
                 </Button>
               </div>
 
               <div className="text-sm text-muted-foreground">
-                Piloto libre de riesgo • Evaluación de 30 días • Garantía de rendimiento
+                Risk-free pilot • 30-day evaluation • Performance guarantee
               </div>
             </div>
           </section>
